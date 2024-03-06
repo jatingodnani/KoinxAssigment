@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'roboto': ['Roboto', 'sans-serif'],
+        'tenor-sans': ['Tenor Sans', 'sans-serif'],
+        'ubuntu': ['Ubuntu', 'sans-serif']
+      },
+      colors:{
+       "gray":"DEDFE2",
+       "blue":"#2870EA"
+      }
+    },
   },
   plugins: [],
 }
