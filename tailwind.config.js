@@ -12,8 +12,9 @@ export default {
         'ubuntu': ['Ubuntu', 'sans-serif']
       },
       colors:{
-       "gray":"DEDFE2",
-       "blue":"#2870EA"
+       "gray":"#DEDFE2",
+       "blue":"#2870EA",
+       "backj":"#EFF2F5"
       }
     },
   },

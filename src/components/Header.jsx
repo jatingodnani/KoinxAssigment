@@ -26,7 +26,7 @@ function Header() {
         >
           Resource Center
         </Link>
-        <button className="bg-blue p-2 px-3 capitalize font-tenor-sans font-semibold rounded-xl border-0 text-white">
+        <button className="bg-blue p-2 px-6 capitalize font-tenor-sans font-semibold rounded-xl border-0 text-white">
           get started
         </button>
        </div>
