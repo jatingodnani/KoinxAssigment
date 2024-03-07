@@ -10,28 +10,19 @@ import Coinchart from "../components/tradingcgarts/Coinchart";
 import { getTokendata } from "../fetchapi/fetchapi";
 
 export default function Home() {
-  console.log(getTokendata());
   return (
-    <div className="w-full h-min-[100vh]">
-      <div className="w-full min-h-[100vh] bg-backj  p-4 box-border ">
-        <div className="w-[100%] h-full grid grid-cols-12 mt-4 gap-12 p-6 box-border">
-          <div className="col-span-8">
-            <Coinchart />
-
-            <Tab />
-            <CoinDetail />
-            <Sentiments />
-            <About />
-            <Tokenisation />
-            <Teamdetail />
-          </div>
-          <div className="col-span-4">
-            <Rightbar/>
-          </div>
-        </div>
+    <div className="h-full flex flex-col md:flex-row  gap-12 p-6 box-border bg-[#eff2f5]">
+      <div className="w-full md:w-[60%] border-box ">
+        <Coinchart />
+        <Tab />
+        <CoinDetail />
+        <Sentiments />
+        <About />
+        <Tokenisation />
+        <Teamdetail />
       </div>
-      <div className="w-[100%] h-[250px] bg-white">
-        <Trendingcard/>
+      <div className="w-full md:w-[30%]">
+        <Rightbar />
       </div>
     </div>
   );

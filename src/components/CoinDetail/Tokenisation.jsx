@@ -30,7 +30,7 @@ function Tokenisation() {
   };
 
   return (
-    <div className="w-full rounded-md min-h-[400px] p-4 flex flex-col  bg-white  mb-10 ">
+    <div className="rounded-md min-h-[400px] p-4 flex flex-col  bg-white  mb-10 ">
       <div className="flex flex-col ml-2">
         <h2 className="font-roboto">Tokenomics</h2>
         <h3 className="font-roboto">Initial distribution</h3>

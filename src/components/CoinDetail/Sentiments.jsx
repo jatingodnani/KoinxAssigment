@@ -2,11 +2,37 @@ import React from "react";
 import { FcBullish } from "react-icons/fc";
 import { BsExclamationCircleFill } from "react-icons/bs";
 import { option } from "../../../data/data";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 1,
 
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+  // centerMode: true,
+};
 function Sentiments() {
-  
   return (
-    <div className="w-full bg-white flex flex-col my-4 p-4 rounded-md">
+    <div className=" bg-white flex flex-col my-4 p-4 rounded-md">
       <div className="font-bold">
         <h2 className="font-ubuntu">Sentiments</h2>
         <h3 className="font-tenor-sans text-[#768396] flex item-center gap-2">
@@ -14,11 +40,13 @@ function Sentiments() {
           <BsExclamationCircleFill />{" "}
         </h3>
       </div>
-      <div className="flex overflow-x-hidden justify-center gap-2">
-        {[1, 2].map((each) => (
-          <Events key={each} />
+      <Slider {...settings}>
+        {[1, 2, 3, 4, 5, 6].map((each) => (
+          <div className="w-full" key={each}>
+            <Events />
+          </div>
         ))}
-      </div>
+      </Slider>
       <div className="mt-4 flex flex-col w-full">
         <h4 className="font-tenor-sans text-[#768396]">
           Analytic Estimates <BsExclamationCircleFill />
@@ -46,7 +74,7 @@ function Sentiments() {
 }
 function Events() {
   return (
-    <div className="w-[500px] bg-[#E8F4FD] flex justify-center  p-4 rounded-md gap-2">
+    <div className=" bg-[#E8F4FD] flex justify-center  p-4 rounded-md gap-2 mx-2">
       <FcBullish className="text-3xl mt-4" />
       <div className="w-full ">
         <h4 className="font-bold font-ubuntu text-[12px]">

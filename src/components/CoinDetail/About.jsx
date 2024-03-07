@@ -3,7 +3,7 @@ import phone1 from "../../assets/phone1.png";
 import { FaArrowRight } from "react-icons/fa";
 function About() {
   return (
-    <div className="flex flex-col p-4 rounded-md font-roboto w-full bg-white mb-3">
+    <div className="flex flex-col p-4 rounded-md font-roboto bg-white mb-3">
       <h3 className="flex-bol font-roboto">About Bitcoin</h3>
       <div className="flex  flex-col">
         <h4 className="font-bold text-[15px]">What is Bitcoin</h4>
@@ -44,10 +44,9 @@ function About() {
         </p>
       </div>
 
-
-      <div className=" flex w-full items-center gap-4 mb-2">
-        <div className="flex w-[40%]  rounded-md   items-center gap-4  p-4 bg-[#39d572] text-roboto">
-          <img src={phone1} className="w-[30%]" />
+      <div className=" flex w-full  gap-4 mb-2 flex-col lg:flex-row">
+        <div className="flex  h-32 rounded-md   items-center gap-4  p-4 bg-[#39d572] text-roboto lg:w-[400px]">
+          <img src={phone1} className="h-full object-cover " />
           <div className="flex flex-col mb-4">
             <h3 className="font-roboto font-bold text-white w-[80%] text-[20px]">
               Calculate your Profit
@@ -59,10 +58,11 @@ function About() {
           </div>
         </div>
 
-
-        <div className="flex w-[40%] 
-        rounded-md   items-center gap-4  p-4 bg-[#ea723b] text-roboto">
-          <img src={phone} className="w-[30%]" />
+        <div
+          className="flex 
+        rounded-md  h-32 items-center gap-4  p-4 bg-[#ea723b] text-roboto lg:w-[400px]"
+        >
+          <img src={phone} className="h-full object-cover " />
           <div className="flex flex-col mb-4">
             <h3 className="font-roboto font-bold text-white w-[80%] text-[20px]">
               Calculate your Fund libality
@@ -73,17 +73,18 @@ function About() {
             </div>
           </div>
         </div>
-
-       
       </div>
       <hr className=" mt-2 text-gray w-[100%]" />
-        <div className="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, sed minima voluptate consequatur expedita odio pariatur debitis explicabo sequi eos qui 
-                dolorem unde rem voluptatibus veniam praesentium numquam eveniet aspernatur.</p>
-        </div>
+      <div className="">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, sed
+          minima voluptate consequatur expedita odio pariatur debitis explicabo
+          sequi eos qui dolorem unde rem voluptatibus veniam praesentium numquam
+          eveniet aspernatur.
+        </p>
+      </div>
     </div>
   );
 }
-
 
 export default About;

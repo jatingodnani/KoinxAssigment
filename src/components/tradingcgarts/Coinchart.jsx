@@ -12,9 +12,7 @@ function CoinChart() {
     script.innerHTML = `
       {
         "symbols": [
-          [
-            "BITSTAMP:BTCUSD|1D"
-          ]
+            ["BITSTAMP:BTCUSD|1D|INR"]
         ],
         "chartOnly": false,
         "width": "100%",
@@ -60,8 +58,8 @@ function CoinChart() {
   }, []);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
-      <div className="tradingview-widget-container__widget"></div>
+    <div className="tradingview-widget-container w-full" ref={container}>
+      <div className="tradingview-widget-container__widget w-full"></div>
     </div>
   );
 }
