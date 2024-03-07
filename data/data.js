@@ -1,23 +1,26 @@
+import member1 from "../public/group2.png"
+import member2 from "../public/group1.png"
+import member3 from "../public/group3.png"
 export const  Team=[
     {
         id:1,
         name:"John Smith",
         associated:"designated here",
-        profile:'../src/assets/group2.png'
+        profile:member1
         
     },
     {
         id:1,
         name:"Eliana williams",
         associated:"designated here",
-        profile:'../src/assets/group1.png'
+        profile:member2
 
     },
     {
         id:1,
         name:"John Smith",
         associated:"designated here",
-        profile:'../src/assets/group3.png'
+        profile:member3
 
     }
 ]
