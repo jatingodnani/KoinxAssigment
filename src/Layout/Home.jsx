@@ -1,5 +1,5 @@
 import About from "../components/CoinDetail/About";
-import CoinDetail from "../components/CoinDetail/Box";
+import CoinDetail from "../components/CoinDetail/CoinBox";
 import Sentiments from "../components/CoinDetail/Sentiments";
 import Teamdetail from "../components/CoinDetail/Teamdetail";
 import Tokenisation from "../components/CoinDetail/Tokenisation";

@@ -10,14 +10,14 @@ var settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
 
   responsive: [
     {
       breakpoint: 1000,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
       },
     },
     {
@@ -28,7 +28,6 @@ var settings = {
       },
     },
   ],
-  // centerMode: true,
 };
 function Sentiments() {
   return (
@@ -51,21 +50,28 @@ function Sentiments() {
         <h4 className="font-tenor-sans text-[#768396]">
           Analytic Estimates <BsExclamationCircleFill />
         </h4>
-        <div className="flex w-[50%] justify-between align-cente">
-          <div className="w-[100px] h-[100px] rounded-[50%] bg-[#EBF9F4]  flex justify-center items-center">
-            <span className="font-tenor-sans font-bold">70%</span>
+        <div className="flex w-full items-center border-box gap-5">
+          <div className="w-[150px] h-[150px] rounded-[50%] bg-[#EBF9F4]  flex justify-center items-center">
+            <span className="font-tenor-sans font-bold text-3xl text-[#00B386]">
+              70%
+            </span>
           </div>
-          <div className="flex flex-col ">
-            {option.map((each) => (
-              <div
-                key={each}
-                className="flex justify-center items-center gap-2 font-thin font-roboto"
-              >
-                <p>{each.name}</p>
-                <div className="h-4 w-100px bg-red-500"></div>
-                <p>{each.percentage}</p>
-              </div>
-            ))}
+          <div className="flex flex-col font-ubuntu w-[200px] items-start">
+            <div className="flex justify-center items-center gap-2 font-thin font-roboto">
+              <p className="text-[12px]">BUY</p>
+              <div className={`h-2 rounded   bg-green-500 w-[150px]`}></div>
+              <p className="text-[12px]">60%</p>
+            </div>
+            <div className="flex justify-center items-center gap-2 font-thin font-roboto">
+              <p className="text-[12px]">HOLD</p>
+              <div className={`h-2 w-[75px]  rounded bg-gray `}></div>
+              <p className="text-[12px]">30%</p>
+            </div>
+            <div className="flex justify-center items-center gap-2 font-thin font-roboto">
+              <p className="text-[12px]">Sell</p>
+              <div className={`h-2 rounded w-[50px] bg-red-500`}></div>
+              <p className="text-[12px]">10%</p>
+            </div>
           </div>
         </div>
       </div>
