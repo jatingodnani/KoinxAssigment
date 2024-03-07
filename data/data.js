@@ -29,35 +29,34 @@ export const  Team=[
 export const arr = [
   {
     name: "Bitcoin Price",
-    value: Math.random() * 1000  // Example random value
+    value: Math.random() * 1000  
   },
   {
     name: "Market Cap",
-    value: Math.random() * 1000000  // Example random value
+    value: Math.random() * 1000000 
   },
   {
     name: "24h INR VALUE",
-    value: Math.random() * 100  // Example random value
+    value: Math.random() * 100  
   },
   {
     name: "Market Cap Dominance",
-    value: Math.random() * 100  // Example random value
+    value: Math.random() * 100 
   },
   {
     name: "24h USD VALUE",
-    value: Math.random() * 1000  // Example random value
+    value: Math.random() * 1000  
   },
   {
     name: "Volume",
-    value: Math.random() * 1000000  // Example random value
+    value: Math.random() * 1000000  
   },
   {
     name: "All Time High",
-    value: Math.random() * 10000  // Example random value
-  },
+    value: Math.random() * 10000  
   {
     name: "All Time Low",
-    value: Math.random() * 1000  // Example random value
+    value: Math.random() * 1000  
   }
 ];
 

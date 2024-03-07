@@ -7,7 +7,7 @@ function Card({ symbol, small, percentagechange, price, sparkline }) {
       : parseFloat(percentagechange);
 
   return (
-    // <Link  className="no-underline">
+    
     <Link
       to={`/${symbol}`}
       className="flex no-underline cursor-pointer flex-col justify-center items-center border border-[#374255] rounded box-border text-black "
@@ -29,7 +29,7 @@ function Card({ symbol, small, percentagechange, price, sparkline }) {
         <img className="w-[90%]" src={sparkline} alt="sparkline" />
       </div>
     </Link>
-    // </Link>
+   
   );
 }
 export default Card;
