@@ -1,7 +1,5 @@
-import React from "react";
 import { FcBullish } from "react-icons/fc";
 import { BsExclamationCircleFill } from "react-icons/bs";
-import { option } from "../../../data/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

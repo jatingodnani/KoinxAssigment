@@ -5,17 +5,16 @@ import { getTokendata } from "../../fetchapi/fetchapi";
 import { arr } from "../../../data/data";
 
 function CoinDetail() {
-  const [data,setdata]=useState({});
- 
-  const {id}=useParams();
-  async function getdata(){
-      await getTokendata(id,setdata)
+  const [data, setdata] = useState({});
+
+  const { id } = useParams();
+  async function getdata() {
+    await getTokendata(id, setdata);
   }
-  useEffect(()=>{
- getdata();
-  },[])
-  
-  
+  useEffect(() => {
+    getdata();
+  }, []);
+
   return (
     <div className="rounded-md  flex flex-col bg-white p-8 mb-4 item-center">
       <div className="w-full flex flex-col ">
