@@ -1,14 +1,30 @@
-export async function getTokendata() {
+export async function getTrendingToken(settrending) {
     try {
         const response = await fetch("https://api.coingecko.com/api/v3/search/trending");
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        console.log(data)
-        return data;
+        settrending(data.coins)
     } catch (error) {
         console.error('Error fetching data:', error);
-        return null; // Or handle the error in a different way based on your application's requirements
+        
+    }
+}
+
+
+
+export async function getTokendata() {
+    try {
+        const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd`);
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
+     
+       
+    } catch (error) {
+        console.error('Error fetching data:', error);
+
     }
 }
